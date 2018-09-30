@@ -1,5 +1,5 @@
 /*
- * First and Last Names
+ * Marcus Rose
  */
 
 public class Homework3 {
@@ -17,12 +17,15 @@ public class Homework3 {
 	 * class (e.g. Math.random())
 	 */
 	public void grade() {
-
+		grade(this);
 	}
 
-	/* Calculate and return the sum of value1, value2, and value3
-	 */
+
+	/*Calculate and return the sum of value1, value2, and value3 */
+
 	public int sum() {
+		int total = value1 + value2 + value3;
+		return total;
 
 	}
 
@@ -30,6 +33,8 @@ public class Homework3 {
 	 * Hint: the average of numbers can be fractional
 	 */
 	public double average() {
+		int average = (value1 + value2 + value3)/3;
+		return average;
 
 	}
 
@@ -37,6 +42,9 @@ public class Homework3 {
 	 * value 1, value2, and value3
 	 */
 	 public int productSumDifference() {
+		 int product = value1 * value2 * value3;
+		 int sum = value1 + value2 + value3;
+		 return product -= sum;
 
 	 }
 
@@ -44,6 +52,8 @@ public class Homework3 {
 	  * value3
 	  */
 	  public int sumSquares() {
+			double squares = Math.pow(value1, 2) + Math.pow(value2, 2) + Math.pow(value3, 2);
+			return (int) squares;
 
 	  }
 
